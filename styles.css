@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li,
 a,
 button {
@@ -41,10 +45,10 @@ button {
     align-items: center;
     padding: 10px 5%;
 
-    background: #eee;
+    background-color: #eee;
     box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
 
-    transition: all 1s ease 0s;
+    transition: background-color,box-shadow 0.3s ease 0s;
 }
 
 .logo {
@@ -95,4 +99,25 @@ button:hover {
 .bg-image img {
     width: 100%;
     /* background-image: url(img/Landscape-Color.jpg); */
+}
+
+.up-arrow {
+    position: fixed;
+    left: calc(50% - 40px);
+    bottom: 25px;
+
+    font-size: 40px;
+    color: black;
+    background-color: #eee;
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+.up-arrow:hover {
+    background-color: #bbb;
 }
