@@ -48,7 +48,7 @@ button {
     background-color: #eee;
     box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
 
-    transition: background-color,box-shadow 0.3s ease 0s;
+    transition: background-color, box-shadow 0.3s ease 0s;
 }
 
 .logo {
@@ -92,8 +92,21 @@ button:hover {
 }
 
 .bg-image {
+    position: relative;
     text-align: center;
+
     background-color: black;
+    z-index: -1;
+}
+
+.landing-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3vw;
+    width: 100%;
 }
 
 .bg-image img {
@@ -118,6 +131,42 @@ button:hover {
     opacity: 0;
     transition: visibility 0.5s, opacity 0.5s linear;
 }
+
 .up-arrow:hover {
     background-color: #bbb;
+}
+
+/* MEDIA QUERIES */
+
+/* @media (max-width: 986px) {
+    .landing-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .landing-text {
+        font-size: 20px;
+    }
+} */
+
+/* CUSTOM SCROLL BARS */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #eee;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 20px;
+    border: 3px solid #eee;
 }
