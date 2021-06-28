@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+li,
+a,
+button {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    color: #eee;
+    /* box-shadow: 0 1px 10px rgba(0, 0, 0, .5); */
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+
+    background: #eee;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
+
+    transition: all 1s ease 0s;
+}
+
+.logo {
+    cursor: pointer;
+    height: 30px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.filler {
+    background-color: black;
+    height: 1500px;
+}
+
+.bg-image {
+    text-align: center;
+    background-color: black;
+}
+
+.bg-image img {
+    width: 100%;
+    /* background-image: url(img/Landscape-Color.jpg); */
+}
