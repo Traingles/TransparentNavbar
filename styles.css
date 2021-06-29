@@ -37,7 +37,7 @@ button {
     top: 0;
     left: 0;
 
-    height: 60px;
+    height: 50px;
     width: 100vw;
 
     display: flex;
@@ -48,7 +48,7 @@ button {
     background-color: #eee;
     box-shadow: 0 1px 15px rgba(0, 0, 0, .5);
 
-    transition: background-color, box-shadow 0.3s ease 0s;
+    transition: height 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s;
 }
 
 .logo {
@@ -88,7 +88,7 @@ button:hover {
 
 .filler {
     background-color: black;
-    height: 1500px;
+    height: 2500px;
 }
 
 .bg-image {
@@ -136,19 +136,54 @@ button:hover {
     background-color: #bbb;
 }
 
-/* MEDIA QUERIES */
-
-/* @media (max-width: 986px) {
-    .landing-text {
-        font-size: 30px;
-    }
+#contact-button {
+    visibility: visible;
+    opacity: 1;
 }
 
-@media (max-width: 600px) {
-    .landing-text {
-        font-size: 20px;
+#hamburger {
+    display: none;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    #navbar {
+        display: inline-block;
+        text-align: center;
     }
-} */
+
+    .nav__links {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.25s, opacity 0.25s linear;
+    }
+
+    .nav__links li {
+        margin-top: 15px;
+        display: block;
+    }
+
+    #contact-button {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.25s, opacity 0.25s linear;
+        
+        margin-top: 15px;
+    }
+
+    #hamburger {
+        display: inline;
+    }
+}
 
 /* CUSTOM SCROLL BARS */
 

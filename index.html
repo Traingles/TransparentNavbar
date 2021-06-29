@@ -12,22 +12,29 @@
 </head>
 
 <body>
+    <!-- for scrolling to top -->
+    <div id="home"></div>
+
     <header id="navbar">
+        <button id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <div>
             <img class="logo" src="img/logo.svg" alt="logo">
         </div>
         <nav>
-            <ul class="nav__links">
-                <li class="grow"><a href="#">Home</a></li>
-                <li class="grow"><a href="#">Projects</a></li>
-                <li class="grow"><a href="#">About</a></li>
+            <ul class="nav__links" id="nav-links">
+                <li class="grow"><a href="#home">Home</a></li>
+                <li class="grow"><a href="#projects">Projects</a></li>
+                <li class="grow"><a href="#about">About</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
+        <a class="cta" href="#"><button id="contact-button" >Contact</button></a>
     </header>
 
     <button id="up-arrow" class="up-arrow">
-        <i class="fas fa-angle-up"></i>   
+        <i class="fas fa-angle-up"></i>
     </button>
 
     <section class="bg-image">
@@ -37,6 +44,9 @@
             <p>Web Developer</p>
         </div>
     </section>
+
+    <section id="projects"></section>
+    <section id="about"></section>
 
     <section class="filler"></section>
 
