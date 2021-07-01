@@ -153,6 +153,27 @@ button:hover {
     font-size: 20px;
 }
 
+#projects {
+    color: white;
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.flex-content {
+    flex: 1;
+    text-align: justify;
+    margin: 25px 25px 0 25px;
+}
+
+.title {
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {
@@ -176,12 +197,16 @@ button:hover {
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.25s, opacity 0.25s linear;
-        
+
         margin-top: 15px;
     }
 
     #hamburger {
         display: inline;
+    }
+
+    .flex-container {
+        display: block;
     }
 }
 
